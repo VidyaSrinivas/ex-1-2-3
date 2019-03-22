@@ -1,0 +1,36 @@
+SELECT * FROM dbo.user_detail
+WHERE name = 'john'
+SELECT contact,emailid FROM dbo.user_detail
+WHERE name = 'baharat'
+
+SELECT * FROM dbo.skill
+where skillname LIKE '%Java%'
+SELECT * FROM dbo.skill
+where skillname = 'Java ,c++,angular'
+
+SELECT * FROM dbo.empaddress
+SELECT * FROM dbo.user_detail
+
+
+
+
+SELECT * FROM dbo.skill
+SELECT * from dbo.user_detail WHERE empId
+IN (SELECT empid FROM dbo.skill WHERE experince_years>3)
+
+SELECT * from dbo.user_detail WHERE empId
+IN (SELECT empid FROM dbo.empaddress WHERE city='bangalor')
+
+
+
+SELECT e.empid ,max(p.experince_years) from user_detail e JOIN dbo.skill p
+on e.empid = e.empid
+
+
+
+SELECT * FROM dbo.skill
+
+S MAXIMUM = max(experince_years)FROM dbo.skill
+
+
+
